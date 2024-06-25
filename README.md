@@ -11,7 +11,7 @@ The prediction function returns a tuple (Bool, int), where:
 Bool: A boolean indicating whether the player chooses to participate in the round (True for participating, False to decline).
 int: The bid amount, which is considered only if Bool is True. If Bool is False, the bid amount is automatically set to 0.
 Scoring
-If all players except one decline (i.e., do not participate), the lone participant receives -100 points.
+If all players except one decline (i.e., do not participate), the lone participant receives -10 points, second highest receives + 5.
 If two or more players have the highest bid, those players are penalized by removing them from the bid consideration for that round.
 If only one player or no player declines, each participating player receives points equal to their bid.
 Game End
